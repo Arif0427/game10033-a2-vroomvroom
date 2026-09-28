@@ -13,7 +13,6 @@ namespace MohawkGame2D
         /// <summary>
         ///     Setup runs once before the game loop begins.
         /// </summary>
-        int x;
 
 
         public void Setup()
@@ -27,11 +26,11 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-
-            x = Input.GetMouseX();
+            //Set x variable to mouse input
+            int x = Input.GetMouseX();
             
             //Draw sky, road and foreground
-            Window.ClearBackground(130 - x, 200 - x, 229 - x);
+            Window.ClearBackground(130, 200, 229);
             Draw.SetLineSize(0);
             Draw.SetLineColor(0);
             Draw.SetFillColor(125);
@@ -39,10 +38,16 @@ namespace MohawkGame2D
             Draw.SetFillColor(72, 111, 56);
             Draw.Rectangle(0, 300, 400, 100);
 
-            //Draw clouds and trees
+            //Draw cloud(s)
+            Draw.SetFillColor(255);
+            Draw.Circle( (int)(-x * 0.75 + 230), 50, 10);
+            Draw.Circle( (int)(-x * 0.75 + 260), 40, 20);
+            Draw.Circle( (int)(-x * 0.75 + 290), 50, 10);
+            Draw.Rectangle((int)(-x * 0.75 + 230), 40, 60, 20);
 
-            
-            //Draw car and headlights
+            //Draw Trees
+
+            //Draw car
             Draw.SetFillColor(255, 0, 0);
             Draw.Rectangle(x, 260, 20, 20);
             Draw.Rectangle(x + 20, 240, 40, 40);
@@ -55,8 +60,15 @@ namespace MohawkGame2D
             Draw.SetFillColor(255, 255, 0);
             Draw.Rectangle(x + 70, 260, 10, 10);
 
+            //Day Night gradient
+            Draw.SetFillColor(0, 0, 0, (int)(x * 0.50));
+            Draw.Square(0, 0, 400);
+
+            //Headlight on when mouse held down
             if (Input.IsMouseButtonDown(MouseButton.Left) == true)
             {
+                Draw.SetFillColor(255, 255, 0);
+                Draw.Rectangle(x + 70, 260, 10, 10);
                 Draw.Triangle(x + 75, 265, x + 120, 240, x + 120, 290);
             }
 
