@@ -40,12 +40,110 @@ namespace MohawkGame2D
 
             //Draw cloud(s)
             Draw.SetFillColor(255);
-            Draw.Circle( (int)(-x * 0.75 + 230), 50, 10);
-            Draw.Circle( (int)(-x * 0.75 + 260), 40, 20);
-            Draw.Circle( (int)(-x * 0.75 + 290), 50, 10);
-            Draw.Rectangle((int)(-x * 0.75 + 230), 40, 60, 20);
+            Draw.Circle( (int)(-x * 0.5 + 230), 50, 10);
+            Draw.Circle( (int)(-x * 0.5 + 260), 40, 20);
+            Draw.Circle( (int)(-x * 0.5 + 290), 50, 10);
+            Draw.Rectangle((int)(-x * 0.5 + 230), 40, 60, 20);
 
             //Draw Trees
+            int s = -2; // speed of tree movement
+            int d; //displacement of the trees
+
+            d = 140;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 250;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 370;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 420;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 525;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 611;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 660;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 777;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 845;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 911;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 1040;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
+
+            d = 1130;
+            Draw.SetFillColor(75, 40, 30);
+            Draw.Rectangle((s * x + d - 5), 240, 10, 20);
+            Draw.SetFillColor(62, 134, 103);
+            Draw.Triangle((s * x + d), 220, (s * x + d - 10), 240, (s * x + d + 10), 240);
+            Draw.Triangle((s * x + d), 210, (s * x + d - 10), 230, (s * x + d + 10), 230);
+            Draw.Triangle((s * x + d), 200, (s * x + d - 10), 220, (s * x + d + 10), 220);
 
             //Draw car
             Draw.SetFillColor(255, 0, 0);
